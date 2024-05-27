@@ -20,7 +20,7 @@ import Profile from "./pages/profile/Profile";
 import Register from "./pages/login/Register";
 import CheckoutSuccess from "./components/CheckoutSuccess";
 import PasswordReset from "./pages/login/PasswordReset";
-import Product from "./pages/Product";
+import Product from "./components/product/Product";
 import Terms from "./pages/terms/Terms.jsx";
 import CartLogin from "./pages/cartLogin/CartLogin";
 import BrandPage from "./pages/brands/BrandPage";
@@ -29,6 +29,7 @@ import BrandPage from "./pages/brands/BrandPage";
 import "./utils/Carousel.js";
 
 function App() {
+
   const [isLoggedIn, setIsLoggedIn] = useState(null);
 
   const login = async (user, cb) => {

@@ -1,8 +1,8 @@
-import "./Product.css"
 import { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
-import { formatCurrency } from "../utils/formatCurrency";
-import CartContext from "../context/cart/CartContext";
+import { formatCurrency } from "../../utils/formatCurrency";
+import CartContext from "../../context/cart/CartContext";
+import "./Product.css"
 
 export default function Product() {
 
@@ -32,10 +32,8 @@ export default function Product() {
                 method: "GET",
             });
             const data = await response.json();
-
             const priceInCents = (data[0].price) / 10;
             const priceInDollars = (priceInCents / 100).toFixed(2);
-
             setProduct({ ...data[0], price: +priceInDollars});
         } catch (error) {
             console.log("Error fetching product", error);
@@ -84,8 +82,8 @@ export default function Product() {
                                 <img src={product[currentImage]} alt={`Image ${currentImage.split(" ")[1]}`} className="product-image" />
                             </div>
                             <div className="flex gap-5 justify-center">
-                                <button className="my-10 w-11 h-11 rounded-full flex justify-center items-center bg-rose text-3xl" onClick={prevImage}>&lt;</button>
-                                <button className="my-10 w-11 h-11 rounded-full flex justify-center items-center bg-rose text-3xl" onClick={nextImage}>&gt;</button>
+                                <button className="my-10 w-11 h-11 rounded-full flex justify-center items-center btn text-3xl" onClick={prevImage}> &lt; </button>
+                                <button className="my-10 w-11 h-11 rounded-full flex justify-center items-center btn text-3xl" onClick={nextImage}> &gt; </button>
                             </div>
                         </div>
                     </div>
@@ -101,13 +99,12 @@ export default function Product() {
                     <div>
                         {product.units ?
                         (
-                            <button className="mb-10 w-40 h-10 rounded-full flex justify-center items-center btn" onClick={() => addToCart(product)}>Add To Cart</button>
+                        <button className="mb-10 w-40 h-10 rounded-full flex justify-center items-center btn" onClick={() => addToCart(product)}>Add To Cart</button>
                         )
                         : (<p>Out of Stock</p>)}
                     </div>
                 </div>
-                
             </div>
         </section>
     )
-};
+}

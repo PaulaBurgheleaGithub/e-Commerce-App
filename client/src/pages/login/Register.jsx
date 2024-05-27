@@ -15,7 +15,7 @@ export default function Register() {
 		marketing: 0
 	});
 
-	const {firstname, lastname, email, password, marketing} = credentials;
+	const {firstname, lastname, email, password} = credentials;
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;

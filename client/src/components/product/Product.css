@@ -25,15 +25,15 @@
 }
 
 #Product button{
-    color: #F15BB5;
+    color: hsl(296, 57%, 66%);
     background-color: #E5E5E5;
     border-color: #E5E5E5;
-    padding: 5px;
+    padding: 8px;
 }
 
 #Product button:hover{
-    background-color: #F15BB5;
-    color: white;
+    background-color: hsl(296, 57%, 66%);
+    color: #E5E5E5;
     cursor: pointer;
 }
 

@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import {useState} from 'react';
+import { useState } from 'react';
 
 // assets
 import "./Header.css";
-// import styles from './style.module.scss';
-
 
 //components
 import Logo from "../svg/logo";
@@ -35,10 +33,9 @@ const menu = {
     }
 }
 
-
 export default function Header() {
 	const [isActive, setIsActive] = useState(false);
-
+	
 	return (
 		<>
 			<div className="fixed menu lg:hidden md:left-[28px] left-[22px] w-full min-w-screen min-h-screen overflow-hidde">

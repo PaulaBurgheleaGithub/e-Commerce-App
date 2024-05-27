@@ -11,7 +11,6 @@ const [credentials, setCredentials] = useState({
 });
 
 const auth = useContext(authContext);
-console.log(auth);
 
 const { email, password } = credentials;
 
@@ -62,10 +61,10 @@ return (
 						focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
 					/>
 				</div>
-					<div>						
-						<button className="text-neutral-100 bg-gradient-to-r from-primary-400 to-primary-800 text-lg w-full sm:w-auto px-6 py-3 text-center rounded-full" onClick={login}>
-							Sign In
-						</button>
+				<div>						
+					<button className="text-neutral-100 bg-gradient-to-r from-primary-400 to-primary-800 text-lg w-full sm:w-auto px-6 py-3 text-center rounded-full" onClick={login}>
+						Sign In
+					</button>
 				</div>
 			</div>
 
