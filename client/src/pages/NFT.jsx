@@ -8,14 +8,15 @@ import CartDropDown from "../components/cardDropDown/cardDropDown";
 export default function Layout() {
 
   return (
-    <div className="w-full min-w-screen min-h-screen overflow-hidden">
-      <Header />
-      <main>
-        <Outlet />
-        <CartDropDown />
-      </main>
-
-      <Footer />
-    </div>
+    <> 
+      <div className="w-full min-w-screen min-h-screen overflow-hidden">
+        <Header />
+        <main>
+          <Outlet />
+          <CartDropDown />
+        </main>
+      </div>
+    <Footer />
+    </>
   );
 }

@@ -28,7 +28,7 @@ return (
 	<div className="pt-3">
 		<div className="login-form">
 		<div className="login-form-inner flex flex-col items-center">
-			<h1 className="loginTitle">Login</h1>
+			<h1 className="loginTitle text-primary-800">Login</h1>
 			<div className="loginForm flex flex-col items-center">
 				<div className="email">
 				<input

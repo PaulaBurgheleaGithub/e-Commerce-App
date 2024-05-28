@@ -37,10 +37,10 @@ export default function About() {
 	}
 
   return (
-    <div className="h-screen sm:pt-5 pt-2 minmd:px-4 minlg:px-4 minlg:mb-[-98px] mt-[100px]" id="Contact">
+    <div className="h-screen sm:pt-5 pt- minmd:px-4 minlg:px-4 minlg:mb-[-98px]" id="Contact">
       <div className="contact pt-3">
         <div className="contact-header">
-          <h1>Contact Us</h1>
+          <h1 className="text-primary-800 loginTitle">Contact Us</h1>
           <p>Have questions or comments? We&apos;d love to hear from you! Fill out the form and we&apos;ll be in touch as soon as possible.</p>
         </div>
         <div className="w-100 flex lg:flex-row justify-center align-center gap-10 sm:flex-col align-center">
